@@ -1,0 +1,24 @@
+*{
+    transition: .6s;
+}
+.v-icon{
+    opacity: 0;
+    transition: .6s;
+    color: aliceblue;
+    cursor: pointer;
+}
+.vic{
+    color: aliceblue !important;
+    transition: .6s;
+}
+.m-card:hover .v-icon{
+    opacity: .7;
+    font-size: 2rem;
+    z-index: 1;
+}
+.v-icon:hover .vic{
+    font-size: 2rem;
+}
+.v-icon:hover .m-img{
+   transform: scale(2,1);
+}
