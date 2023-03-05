@@ -17,7 +17,7 @@ const Navbar = () => {
   
   const ai = ' item rounded-b-[.5rem]  bg-slate-700 '
   const oi = 'bg-slate-800 h-[0rem]'
-  const search ='Search'
+  const search ='  Search food'
   const empty ='';
   const [val,setVal]=useState(search)
   const [ic,setIc]=useState(oi) 
@@ -45,7 +45,7 @@ const Navbar = () => {
  
     const input =event=>{
     
-      // setVal(empty)
+      setVal(empty)
       
     }
   
@@ -82,7 +82,7 @@ const Navbar = () => {
         </NavLink>
         <div>
             <div className=' inp max-[750px]:left-[50%] max-[750px]:w-[10rem]  absolute left-[80%]'>
-            <input onClick={input} onChange={type} className='  rounded-md bg-slate-200' type="text" value={val}/>
+            <input onClick={input} onChange={type} className=' opacity-90 text-slate-800  rounded-md bg-slate-200' type="text" value={val}/>
 
             <div className={ic} >
            
