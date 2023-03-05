@@ -28,8 +28,8 @@ const Detail = () => {
         setCard(ac)
     },[])
 
-    const nor = 'tracking-wide  rounded-xl hover:text-[1.2rem]  p-[.5rem] border'
-    const active = ' bg-slate-800 tracking-wide rounded-xl  p-[.5rem] border'
+    const nor = 'tracking-wide max-[750px]:p-[.2rem]  rounded-xl hover:text-[1.2rem]  p-[.5rem] border'
+    const active = ' bg-slate-800 max-[750px]:p-[.2rem] tracking-wide rounded-xl  p-[.5rem] border'
     const[bt,setBt]=useState(nor)
     const[bt1,setBt1]=useState(nor)
 
@@ -60,7 +60,7 @@ const Detail = () => {
     <a href={meals.strYoutube} className='tracking-wide font-semibold text-xl' >Watch on Youtube </a>
     </a>
                 </div>
-                 <div className=' max-[750px]:pb-[0rem]  pb-[1rem] h-[4rem] pr-[1.5rem] flex justify-center gap-[1rem]'>
+                 <div className=' max-[750px]:pb-[.6rem] max-[750px]:h-[3rem] max-[750px]:pr-[5.5rem]  pb-[1rem] h-[4rem] pr-[1.5rem] flex justify-center gap-[1rem]'>
                 <button className={bt} onClick={inger}>Ingerdients</button>
                  <button className={bt1} onClick={instr}>Instructions</button>
                 </div>
