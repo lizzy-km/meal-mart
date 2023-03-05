@@ -27,7 +27,7 @@ const Meal = () => {
 
   return (
     <section className={card}>
-       <div className=' bg-slate-900 flex flex-wrap ease-in scroll-m-0 justify-center  '>
+       <div className=' bg-slate-900 flex align-middle items-center flex-wrap ease-in m-[-1rem] scroll-m-0 justify-center  '>
       {meals.map(meals=>{
         return(
           <div className=' shadow-md rounded-md m-[2rem] h-[30rem] w-[22rem] bg-slate-500' >
