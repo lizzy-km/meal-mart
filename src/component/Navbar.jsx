@@ -32,11 +32,11 @@ const Navbar = () => {
             
     return(
       
-      <Link onClick={'window.location.reload'} to={`/detail/${item.idMeal}`} id={item.idMeal} className=' gap-2 tracking-wide font-medium text-sm rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex justify-left flex-row item-c h-[2rem] text-slate-800 '>
-<Link onClick={'window.location.reload'} to={`/detail/${item.idMeal}`}>
+      <Link  to={`/detail/${item.idMeal}`} id={item.idMeal} className=' gap-2 tracking-wide font-medium text-sm rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex justify-left flex-row item-c h-[2rem] text-slate-800 '>
+<Link  to={`/detail/${item.idMeal}`}>
 <img className=' object-cover border-2 border-slate-700 rounded-[100%] w-[1.4rem] h-[1.4rem]' src={item.strMealThumb} alt=""/>
 </Link>
-<Link onClick={'window.location.reload'} to={`/detail/${item.idMeal}`}>
+<Link  to={`/detail/${item.idMeal}`}>
 <p>{item.strMeal}</p>
 </Link>
 
