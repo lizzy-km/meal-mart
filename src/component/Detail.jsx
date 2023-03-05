@@ -69,7 +69,7 @@ const Detail = () => {
    <div className={card}>
     <div className=' pt-[1.8rem]'>
     
-    <img className=' hover:p-[.3rem] mt-[-2rem]   rounded-[100%] border-slate-500 border-[1rem] object-cover max-[750px]:h-[20rem] max-[750px]:w-[20rem] h-[26rem]  w-[26rem]' src={meals.strMealThumb} alt=""/>
+    <img className=' hover:p-[.3rem] mt-[-2rem] sh  rounded-[100%] border-zinc-800 border-[.5rem] object-cover max-[750px]:h-[20rem] max-[750px]:w-[20rem] h-[26rem]  w-[26rem]' src={meals.strMealThumb} alt=""/>
    
     </div>
      <div>
