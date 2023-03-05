@@ -76,7 +76,7 @@ const Navbar = () => {
            <GiHotMeal className=' mt-[-0.4rem] text-white text-3xl'/>
         </NavLink>
         <div>
-            <div className=' absolute left-[80%]'>
+            <div className=' max-[750px]:left-[50%] absolute left-[80%]'>
             <input onClick={input} onChange={type} className=' rounded-md bg-slate-200' type="text" value={val}/>
 
             <div className={ic} >

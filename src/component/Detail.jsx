@@ -53,14 +53,14 @@ const Detail = () => {
     <section className='overflow-x-hidden  p-[1rem] pt-[2.4rem] text-slate-200 h-screen bg-slate-900 flex flex-col'>
             <div className='  p-[2rem] mb-[-2rem]'>
                 <div>
-                <h2 className='  tracking-wide  font-semibold text-2xl'>{meals.strMeal}</h2>
+                <h2 className=' tracking-wide  font-semibold text-2xl'>{meals.strMeal}</h2>
                
-                <a href={meals.strYoutube}  className=' min-[400px]:mb-[-1rem] mb-[-4rem] ml-[-1rem] flex justify-left align-middle p-[1rem]'>
+                <a href={meals.strYoutube}  className=' max-[750px]:mb-[-1rem] mb-[-4rem] ml-[-1rem] flex justify-left align-middle p-[1rem]'>
         <AiFillYoutube className=' text-red-600 mr-[.6rem] text-[2rem]'/>
     <a href={meals.strYoutube} className='tracking-wide font-semibold text-xl' >Watch on Youtube </a>
     </a>
                 </div>
-                 <div className='  pb-[1rem] h-[4rem] pr-[1.5rem] flex justify-center gap-[1rem]'>
+                 <div className=' max-[750px]:pb-[0rem]  pb-[1rem] h-[4rem] pr-[1.5rem] flex justify-center gap-[1rem]'>
                 <button className={bt} onClick={inger}>Ingerdients</button>
                  <button className={bt1} onClick={instr}>Instructions</button>
                 </div>
