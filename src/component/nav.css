@@ -1,7 +1,16 @@
 .item{
     max-height: 20rem;
     overflow-y: scroll;
-    height: 10rem;
+    height: 0rem;
+    width: 11.4rem;
     display: flex;
     flex-direction: column;
+    font-size: smaller;
+}
+.i-img{
+    max-height:1.6rem;
+    max-width: 1.6rem;
+}
+.inp:hover .item{
+    height: 10rem;
 }

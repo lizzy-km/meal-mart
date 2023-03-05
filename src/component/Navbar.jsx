@@ -21,20 +21,16 @@ const Navbar = () => {
   const empty ='';
   const [val,setVal]=useState(search)
   const [ic,setIc]=useState(oi) 
-  const input =event=>{
-    
-    // setVal(empty)
-    setIc(ai);
-  }
+ 
   const [it,setIt]=useState()
 
   const idata =  meals.map((item)=>{
             
     return(
       
-      <Link  to={`/detail/${item.idMeal}`} id={item.idMeal} className=' gap-2 tracking-wide font-medium text-sm rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex justify-left flex-row item-c h-[2rem] text-slate-800 '>
+      <Link  to={`/detail/${item.idMeal}`} id={item.idMeal} className=' id gap-2 tracking-wide  rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex  justify-left flex-row item-c h-auto text-slate-800 '>
 <Link  to={`/detail/${item.idMeal}`}>
-<img className=' object-cover border-2 border-slate-700 rounded-[100%] w-[1.4rem] h-[1.4rem]' src={item.strMealThumb} alt=""/>
+<img className=' i-img object-cover border-2 border-slate-700 rounded-[100%]' src={item.strMealThumb} alt=""/>
 </Link>
 <Link  to={`/detail/${item.idMeal}`}>
 <p>{item.strMeal}</p>
@@ -47,10 +43,19 @@ const Navbar = () => {
 
     })
  
+    const input =event=>{
+    
+      // setVal(empty)
+      
+    }
   
   const type =event=>{
     setVal(event.currentTarget.value);
-    setIt(idata)
+    setIc(ai);
+    
+      setIt(idata)
+    
+      
   }
   useEffect(()=>{
   
@@ -71,13 +76,13 @@ const Navbar = () => {
 
 
   return (
-    <div className=' fixed w-screen z-50 flex justify-between shadow-lg p-[1.3rem] bg-slate-700'>
+    <div className='  fixed w-screen z-50 flex justify-between shadow-lg p-[1.3rem] bg-slate-700'>
         <NavLink to={'/'}>
            <GiHotMeal className=' mt-[-0.4rem] text-white text-3xl'/>
         </NavLink>
         <div>
-            <div className=' max-[750px]:left-[50%] absolute left-[80%]'>
-            <input onClick={input} onChange={type} className=' rounded-md bg-slate-200' type="text" value={val}/>
+            <div className=' inp max-[750px]:left-[50%] absolute left-[80%]'>
+            <input onClick={input} onChange={type} className='  rounded-md bg-slate-200' type="text" value={val}/>
 
             <div className={ic} >
            
