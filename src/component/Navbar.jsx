@@ -82,7 +82,7 @@ const Navbar = () => {
         </NavLink>
         <div>
             <div className=' inp max-[750px]:left-[50%] max-[750px]:w-[10rem]  absolute left-[80%]'>
-            <input onClick={input} onChange={type} className=' opacity-90 text-slate-800  rounded-md bg-slate-200' type="text" value={val}/>
+            <input onClick={input} onChange={type} className=' max-[750px]:w-[11rem] opacity-90 text-slate-800  rounded-md bg-slate-200' type="text" value={val}/>
 
             <div className={ic} >
            
