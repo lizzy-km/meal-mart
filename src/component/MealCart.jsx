@@ -24,7 +24,7 @@ const MealCart = ({name,image,id}) => {
             <p>Sea food</p>
         </div>
        <Link to={`/detail/${id}`} >
-       <p className=' border-4 v-icon top-[80%] left-[45%] rounded-[100%] text-slate-200 items-center flex justify-center w-[3rem] h-[3rem] absolute bg-slate-400'>
+       <p className=' border-4 v-icon top-[80%] left-[43%] rounded-[100%] text-slate-200 items-center flex justify-center w-[3rem] h-[3rem] absolute bg-slate-400'>
         <GiMeal className=' text-[1.5rem] vic  text-slate-200' />
       </p>
         </Link> 
@@ -32,7 +32,7 @@ const MealCart = ({name,image,id}) => {
       <img className='  m-img hover:blur-sm w-[25rem] object-cover' src={image} alt=""/>
       </div>
       
-      <div onClick={love} className=' absolute hover:text-xl text-2xl w-[1.8rem] h-[1.8rem] rounded-[100%] flex justify-center items-center left-[47%] top-[98%] cursor-pointer bg-slate-300'>
+      <div onClick={love} className=' absolute hover:text-xl text-2xl w-[1.8rem] h-[1.8rem] rounded-[100%] flex justify-center items-center left-[45.7%] top-[98%] cursor-pointer bg-slate-300'>
         {heart}
       </div>
       
