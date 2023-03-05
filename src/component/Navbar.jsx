@@ -28,11 +28,11 @@ const Navbar = () => {
             
     return(
       
-      <Link  to={`/detail/${item.idMeal}`} id={item.idMeal} className=' id gap-2 tracking-wide  rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex  justify-left flex-row item-c h-auto text-slate-800 '>
-<Link  to={`/detail/${item.idMeal}`}>
+      <Link onClick={"window.location.reload"}  to={`/detail/${item.idMeal}`} id={item.idMeal} className=' id gap-2 tracking-wide  rounded-[.4rem] m-[.2rem] bg-slate-400 items-center p-[.5rem] flex  justify-left flex-row item-c h-auto text-slate-800 '>
+<Link onClick={"window.location.reload"}  to={`/detail/${item.idMeal}`}>
 <img className=' i-img object-cover border-2 border-slate-700 rounded-[100%]' src={item.strMealThumb} alt=""/>
 </Link>
-<Link  to={`/detail/${item.idMeal}`}>
+<Link onClick={"window.location.reload"}  to={`/detail/${item.idMeal}`}>
 <p>{item.strMeal}</p>
 </Link>
 
